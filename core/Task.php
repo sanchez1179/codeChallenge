@@ -2,17 +2,19 @@
 
     class Task {
 
-        private $task = [];
+        public $task = [];
 
         public function __construct($post){
 
+            $date = new DateTime('now', new DateTimeZone("America/Los_Angeles"));
+
             return $this->task = [
+
+                "name" => $post['name'],
 
                 "description" => $post['description'],
 
-                "completed" => false,
-
-                "created on" => date("D M j g:i:s T Y")
+                "created_date" => $date->format('Y-m-d H:i:s')
 
             ];
 
@@ -26,6 +28,12 @@
 
         public function completedTask(){
 
-            $this->task['completed'] = true;
+            $this->task['status'] = true;
+
+        }
+
+        public function getTask(){
+
+            return $this->task;
         }
     }
