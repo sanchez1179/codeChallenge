@@ -1,18 +1,21 @@
 <?php
 
 
-    class QueryBuilder{
+    class QueryBuilder
+    {
 
         protected $pdo;
 
 
-        public function __construct($pdo){
+        public function __construct($pdo)
+        {
 
             $this->pdo = $pdo;
 
         }
 
-        public  function selectAll($table){
+        public function selectAll($table)
+        {
 
             $statement = $this->pdo->prepare("SELECT * FROM ($table)");
 
@@ -22,7 +25,8 @@
 
         }
 
-        public function insert($table, $parameters){
+        public function insert($table, $parameters)
+        {
 
             $sql = sprintf(
 
@@ -32,7 +36,7 @@
 
                 implode(', ', array_keys($parameters)),
 
-                '"' . (implode('", "', array_values($parameters)).'"')
+                '"' . (implode('", "', array_values($parameters)) . '"')
             );
 
             try {
@@ -41,10 +45,10 @@
 
                 $statement->execute($parameters);
 
-                echo($parameters['description']." task has been added.");
+                echo($parameters['description'] . " task has been added.");
 
 
-            } catch (Exception $e){
+            } catch (Exception $e) {
 
                 die($e->getMessage());
 
@@ -53,14 +57,15 @@
 
         }
 
-        public function updateTask($table, $parameters){
+        public function updateTask($table, $parameters, $id)
+        {
 
             $arr = [];
 
-            foreach( $parameters as $parameter => $val){
+            foreach ($parameters as $parameter => $val) {
 
 
-                array_push($arr,"$parameter = \"$val\" ");
+                array_push($arr, "$parameter = \"$val\" ");
 
 
             }
@@ -73,48 +78,59 @@
 
                 implode(', ', array_values($arr)) . ',',
 
-                2
+                $id
             );
 
             try {
 
                 $statement = $this->pdo->prepare($sql);
 
-                $statement->execute($parameters);
+                $statement->execute();
 
-                echo($parameters['name']." task has been updated.");
+                echo($parameters['name'] . " task has been updated.");
 
 
-            } catch (Exception $e){
+            } catch (Exception $e) {
 
                 die($e->getMessage());
 
             }
         }
 
-        public function updateCompleted($id){
+        public function updateToCompleted($id)
+        {
 
             $sql = "update tasks set completed_status = true, completed_date = NOW(), last_updated_date = NOW() where id =$id";
 
-            try{
+            $sql2 = "select * from tasks where id = $id";
+
+            try {
 
                 $statement = $this->pdo->prepare($sql);
 
                 $statement->execute();
 
-                echo "your task has been marked complete";
-            } catch(Exception $e){
+                $statement = $this->pdo->prepare($sql2);
+
+                $statement->execute();
+
+                $record = $statement->fetch(PDO::FETCH_ASSOC);
+
+                echo $record['name']." task has been marked as completed!";
+
+            } catch (Exception $e) {
 
                 die($e->getMessage());
 
             }
         }
 
-        public function checkCompletedCount(){
+        public function checkCompletedCount()
+        {
 
             $sql = "select count(*) as \"incomplete tasks\" from tasks where completed_status = 0";
 
-            try{
+            try {
 
                 $statement = $this->pdo->prepare($sql);
 
@@ -124,14 +140,36 @@
 
                 $numberOfResults = $result['incomplete tasks'];
 
-                return $numberOfResults;
+                echo $numberOfResults;
 
-            } catch(Exception $e){
+            } catch (Exception $e) {
+
+                die($e->getMessage());
+
+            }
+        }
+
+        public function getRecord($id)
+        {
+
+            $sql = "select * from tasks where id = $id";
+
+            try {
+
+                $statement = $this->pdo->prepare($sql);
+
+                $statement->execute();
+
+                $record = $statement->fetch(PDO::FETCH_ASSOC);
+
+                return $record;
+
+            } catch (Exception $e) {
 
                 die($e->getMessage());
 
             }
 
-
         }
+
     }

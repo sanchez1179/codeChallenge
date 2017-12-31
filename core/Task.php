@@ -20,9 +20,9 @@
 
         }
 
-        public function getDescription(){
+        public function getName(){
 
-            return $this->task['description'];
+            return $this->task['name'];
 
         }
 

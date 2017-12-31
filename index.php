@@ -1,17 +1,25 @@
 <?php
 
-require 'core/bootstrap.php';
+//require 'core/bootstrap.php';
 
 require 'core/Task.php';
 
+require 'core/router.php';
 
-$post = $_POST;
+
+//$post = $_POST;
 
 //$it = new Task($post);
 
 //$test = $query->selectAll($config['table']);
 
-$numberOfResults = $query->checkCompletedCount();
+//$numberOfResults = $query->checkCompletedCount();
+
+//$record = $query->getRecord($_POST);
+
+//var_dump($uri);
+
+//ar_dump($_POST);
 
 
 //$test = $query->selectAll($config['table'])
