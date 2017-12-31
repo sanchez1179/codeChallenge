@@ -11,9 +11,10 @@ $post = $_POST;
 
 //$test = $query->selectAll($config['table']);
 
-$query->updateCompleted(2);
+$numberOfResults = $query->checkCompletedCount();
 
-$test = $query->selectAll($config['table']);
+
+//$test = $query->selectAll($config['table'])
 
 
 

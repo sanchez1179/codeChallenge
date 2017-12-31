@@ -109,4 +109,29 @@
 
             }
         }
+
+        public function checkCompletedCount(){
+
+            $sql = "select count(*) as \"incomplete tasks\" from tasks where completed_status = 0";
+
+            try{
+
+                $statement = $this->pdo->prepare($sql);
+
+                $statement->execute();
+
+                $result = $statement->fetch();
+
+                $numberOfResults = $result['incomplete tasks'];
+
+                return $numberOfResults;
+
+            } catch(Exception $e){
+
+                die($e->getMessage());
+
+            }
+
+
+        }
     }
