@@ -14,9 +14,9 @@
 
             if($uri == 'getTaskList'){
 
-                $test = $query->selectAll($config['table']);
+                 $query->selectAll($config['table']);
 
-                return $test;
+                break;
 
             } elseif($uri ==''){
 
@@ -26,6 +26,9 @@
 
                 break;
 
+            } else {
+
+                "404.Not Found";
             }
 
         case 'POST':
@@ -57,7 +60,16 @@
 
             }elseif($uri = 'markTaskAsCompleted') {
 
-                $query->updateToCompleted($_POST['id']);
+                $check = $query->getRecord($_POST['id']);
+
+                if($check["completed_date"] == 0) {
+
+                    $query->updateToCompleted($_POST['id']);
+
+                } else {
+
+                    echo $check['name']. " has already been marked as completed";
+                }
 
                 break;
 
