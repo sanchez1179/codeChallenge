@@ -38,7 +38,7 @@
 
             } elseif($uri == 'addTask'){
 
-                if($numberOfCompleted <= 4){
+                if($numberOfCompleted <= 2){
 
                     $newTask = new Task($_POST);
 

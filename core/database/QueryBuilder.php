@@ -21,7 +21,9 @@
 
             $statement->execute();
 
-            return $statement->fetchAll(PDO::FETCH_CLASS);
+            $results = $statement->fetchAll(PDO::FETCH_CLASS);
+
+            var_dump($results);
 
         }
 
@@ -140,7 +142,7 @@
 
                 $numberOfResults = $result['incomplete tasks'];
 
-                echo $numberOfResults;
+                return $numberOfResults;
 
             } catch (Exception $e) {
 
