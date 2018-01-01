@@ -4,6 +4,7 @@
     <list default="true" id="ec742294-07de-4d7f-989c-51c6a4cd5294" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/router.php" afterPath="$PROJECT_DIR$/core/router.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,18 +31,18 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="195">
+              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="router.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="router.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/router.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="70" column="81" lean-forward="false" selection-start-line="70" selection-start-column="81" selection-end-line="70" selection-end-column="81" />
+            <state relative-caret-position="45">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -67,6 +68,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="auth.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/auth.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="29" column="32" lean-forward="false" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -81,7 +92,7 @@
         <entry file="file://$PROJECT_DIR$/core/database/QueryBuilder.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="279">
-              <caret line="144" column="40" lean-forward="false" selection-start-line="144" selection-start-column="40" selection-end-line="144" selection-end-column="40" />
+              <caret line="146" column="36" lean-forward="true" selection-start-line="146" selection-start-column="36" selection-end-line="146" selection-end-column="36" />
               <folding>
                 <marker date="1514751185000" expanded="true" signature="259:281" ph="SELECT * FRO... ${$table}" />
                 <marker date="1514751185000" expanded="true" signature="539:570" ph="insert into " />
@@ -120,11 +131,12 @@
       <list>
         <option value="$PROJECT_DIR$/core/database/Connection.php" />
         <option value="$PROJECT_DIR$/config.php" />
-        <option value="$PROJECT_DIR$/core/bootstrap.php" />
         <option value="$PROJECT_DIR$/core/Task.php" />
+        <option value="$PROJECT_DIR$/core/auth.php" />
+        <option value="$PROJECT_DIR$/core/bootstrap.php" />
+        <option value="$PROJECT_DIR$/core/router.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/core/database/QueryBuilder.php" />
-        <option value="$PROJECT_DIR$/core/router.php" />
       </list>
     </option>
   </component>
@@ -305,12 +317,12 @@
       <option name="presentableId" value="Default" />
       <updated>1514223637122</updated>
       <workItem from="1514223638644" duration="11207000" />
-      <workItem from="1514402288681" duration="53373000" />
+      <workItem from="1514402288681" duration="56683000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64580000" />
+    <option name="totallyTimeSpent" value="67890000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -322,8 +334,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25282714" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -332,7 +343,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -433,14 +444,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/Task.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -457,10 +460,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/database/QueryBuilder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
-          <caret line="144" column="40" lean-forward="false" selection-start-line="144" selection-start-column="40" selection-end-line="144" selection-end-column="40" />
+          <caret line="146" column="36" lean-forward="true" selection-start-line="146" selection-start-column="36" selection-end-line="146" selection-end-column="36" />
           <folding>
             <marker date="1514751185000" expanded="true" signature="259:281" ph="SELECT * FRO... ${$table}" />
             <marker date="1514751185000" expanded="true" signature="539:570" ph="insert into " />
@@ -478,10 +497,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/router.php">
+    <entry file="file://$PROJECT_DIR$/core/auth.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="70" column="81" lean-forward="false" selection-start-line="70" selection-start-column="81" selection-end-line="70" selection-end-column="81" />
+        <state relative-caret-position="435">
+          <caret line="29" column="32" lean-forward="false" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
           <folding />
         </state>
       </provider>

@@ -2,6 +2,9 @@
 
     require 'bootstrap.php';
 
+
+
+
     $method = $_SERVER['REQUEST_METHOD'];
 
     $uri = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/');
@@ -28,7 +31,9 @@
 
             } else {
 
-                "404.Not Found";
+                echo "404.Not Found";
+
+                break;
             }
 
         case 'POST':
@@ -75,14 +80,16 @@
 
             } else {
 
-                "404. Not Found";
+                echo "404. Not Found";
 
                 break;
             }
 
         default:
 
-            "404. Not Found";
+            echo "404. Not Found";
+
+            break;
 
     }
 
