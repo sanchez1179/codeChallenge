@@ -20,25 +20,6 @@
 
   </div>
   <script type="text/javascript" src="assets/js/todos.js"></script>
-  <script type="text/javascript">
 
-      $.ajax(
-          {
-              url: 'http://localhost:8001/getTaskList',
-              type: 'GET',
-              success: function (data) {
-
-                  var title = JSON.parse(data);
-
-                  var number = title.length;
-
-                  for (var i = 0; i < number; i++) {
-
-                      $("#theList").append("<li> <span class='delete'><i class='fa fa-trash' aria-hidden='true'></i></span>"+ title[i]['name'] + "</li>");
-
-                  }
-              }
-          })
-  </script>
   </body>
 </html>
