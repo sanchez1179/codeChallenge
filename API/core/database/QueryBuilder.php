@@ -23,7 +23,7 @@
 
             $results = $statement->fetchAll(PDO::FETCH_CLASS);
 
-            var_dump($results);
+            echo json_encode($results);
 
         }
 

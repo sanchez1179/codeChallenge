@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Task project</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+      <link rel="stylesheet" href="/assets/css/todos.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script type="text/javascript" src="/assets/js/lib/jquery-3.2.1.min.js"></script>
+
+
+  </head>
+  <body>
+  <div id="container">
+      <h1>Task List <i class="fa fa-plus" aria-hidden="true"></i></h1>
+      <input  placeholder="Add New Task" type="text">
+      <ul id="theList">
+
+      </ul>
+
+  </div>
+  <script type="text/javascript" src="assets/js/todos.js"></script>
+  <script type="text/javascript">
+
+      $.ajax(
+          {
+              url: 'http://localhost:8001/getTaskList',
+              type: 'GET',
+              success: function (data) {
+
+                  var title = JSON.parse(data);
+
+                  var name = title[0]["name"];
+
+                  console.log(name);
+
+                  var number = title.length;
+
+
+
+                  for (var i = 0; i < number; i++) {
+                      $("#theList").append("<li> <span class='delete'><i class='fa fa-trash' aria-hidden='true'></i></span>"+ title[i]['name'] + "</li>");
+                  }
+              }
+          })
+  </script>
+  </body>
+</html>

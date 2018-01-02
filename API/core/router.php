@@ -1,5 +1,7 @@
 <?php
 
+
+
     require 'bootstrap.php';
 
 
@@ -17,7 +19,7 @@
 
             if($uri == 'getTaskList'){
 
-                 $query->selectAll($config['table']);
+                $query->selectAll($config['table']);
 
                 break;
 
@@ -25,7 +27,7 @@
 
                 $test = $query->getRecord($_REQUEST['id']);
 
-                var_dump($test);
+                echo json_encode($test);
 
                 break;
 

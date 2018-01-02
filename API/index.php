@@ -1,8 +1,10 @@
 <?php
 
-require 'core/auth.php';
+//require 'core/auth.php';
+//
+//require_auth();
 
-require_auth();
+header('Access-Control-Allow-Origin: *');
 
 require 'core/Task.php';
 
