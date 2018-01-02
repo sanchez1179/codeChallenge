@@ -3,11 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ec742294-07de-4d7f-989c-51c6a4cd5294" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/API/core/auth.php" afterPath="$PROJECT_DIR$/API/core/auth.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/API/core/bootstrap.php" afterPath="$PROJECT_DIR$/API/core/bootstrap.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/API/core/database/QueryBuilder.php" afterPath="$PROJECT_DIR$/API/core/database/QueryBuilder.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/API/core/router.php" afterPath="$PROJECT_DIR$/API/core/router.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/API/index.php" afterPath="$PROJECT_DIR$/API/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/js/todos.js" afterPath="$PROJECT_DIR$/src/assets/js/todos.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,8 +43,8 @@
       <file leaf-file-name="router.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/API/core/router.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+            <state relative-caret-position="464">
+              <caret line="69" column="47" lean-forward="false" selection-start-line="69" selection-start-column="47" selection-end-line="69" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -74,15 +73,17 @@
       <file leaf-file-name="QueryBuilder.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/API/core/database/QueryBuilder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1929">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="276">
+              <caret line="190" column="38" lean-forward="true" selection-start-line="190" selection-start-column="38" selection-end-line="190" selection-end-column="38" />
               <folding>
-                <marker date="1514894401000" expanded="true" signature="259:281" ph="SELECT * FRO... ${$table}" />
-                <marker date="1514894401000" expanded="true" signature="547:578" ph="insert into " />
-                <marker date="1514894401000" expanded="true" signature="1891:1993" ph="update tasks... " />
-                <marker date="1514894401000" expanded="true" signature="2021:2052" ph="select * fro... tasks" />
-                <marker date="1514894401000" expanded="true" signature="2594:2671" ph="select count... tasks" />
-                <marker date="1514894401000" expanded="true" signature="3119:3150" ph="select * fro... tasks" />
+                <marker date="1514897508000" expanded="true" signature="259:281" ph="SELECT * FRO... ${$table}" />
+                <marker date="1514897508000" expanded="true" signature="547:578" ph="insert into " />
+                <marker date="1514897508000" expanded="true" signature="1891:1993" ph="update tasks... " />
+                <marker date="1514897508000" expanded="true" signature="2021:2052" ph="select * fro... tasks" />
+                <marker date="1514897508000" expanded="true" signature="2594:2671" ph="select count... tasks" />
+                <marker date="1514897508000" expanded="true" signature="3119:3150" ph="select * fro... tasks" />
+                <marker date="1514897508000" expanded="true" signature="3538:3568" ph="delete from " />
+                <marker date="1514897508000" expanded="true" signature="3538:3569" ph="delete from " />
               </folding>
             </state>
           </provider>
@@ -101,8 +102,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="279">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="41" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -121,8 +122,8 @@
       <file leaf-file-name="todos.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/assets/js/todos.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="18" column="10" lean-forward="false" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -165,10 +166,10 @@
         <option value="$PROJECT_DIR$/API/core/auth.php" />
         <option value="$PROJECT_DIR$/API/core/bootstrap.php" />
         <option value="$PROJECT_DIR$/API/index.php" />
-        <option value="$PROJECT_DIR$/API/core/router.php" />
         <option value="$PROJECT_DIR$/API/core/database/QueryBuilder.php" />
-        <option value="$PROJECT_DIR$/src/index.html" />
+        <option value="$PROJECT_DIR$/API/core/router.php" />
         <option value="$PROJECT_DIR$/src/assets/js/todos.js" />
+        <option value="$PROJECT_DIR$/src/index.html" />
       </list>
     </option>
   </component>
@@ -263,50 +264,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="codetest" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="API" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codetest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codetest" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="API" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codetest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codetest" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="API" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -420,7 +377,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77866000" />
+    <option name="totallyTimeSpent" value="79154000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -621,22 +578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/API/core/router.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/js/todos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/API/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -647,23 +588,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/API/core/database/QueryBuilder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1929">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="276">
+          <caret line="190" column="38" lean-forward="true" selection-start-line="190" selection-start-column="38" selection-end-line="190" selection-end-column="38" />
           <folding>
-            <marker date="1514894401000" expanded="true" signature="259:281" ph="SELECT * FRO... ${$table}" />
-            <marker date="1514894401000" expanded="true" signature="547:578" ph="insert into " />
-            <marker date="1514894401000" expanded="true" signature="1891:1993" ph="update tasks... " />
-            <marker date="1514894401000" expanded="true" signature="2021:2052" ph="select * fro... tasks" />
-            <marker date="1514894401000" expanded="true" signature="2594:2671" ph="select count... tasks" />
-            <marker date="1514894401000" expanded="true" signature="3119:3150" ph="select * fro... tasks" />
+            <marker date="1514897508000" expanded="true" signature="259:281" ph="SELECT * FRO... ${$table}" />
+            <marker date="1514897508000" expanded="true" signature="547:578" ph="insert into " />
+            <marker date="1514897508000" expanded="true" signature="1891:1993" ph="update tasks... " />
+            <marker date="1514897508000" expanded="true" signature="2021:2052" ph="select * fro... tasks" />
+            <marker date="1514897508000" expanded="true" signature="2594:2671" ph="select count... tasks" />
+            <marker date="1514897508000" expanded="true" signature="3119:3150" ph="select * fro... tasks" />
+            <marker date="1514897508000" expanded="true" signature="3538:3568" ph="delete from " />
+            <marker date="1514897508000" expanded="true" signature="3538:3569" ph="delete from " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API/core/router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="69" column="47" lean-forward="false" selection-start-line="69" selection-start-column="47" selection-end-line="69" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/js/todos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="10" lean-forward="false" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="279">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="41" selection-end-column="15" />
           <folding />
         </state>
       </provider>

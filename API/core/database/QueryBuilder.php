@@ -174,4 +174,24 @@
 
         }
 
+        public function deleteRecord($id){
+
+            $sql = "delete from tasks where id  = $id";
+
+            try{
+
+                $statement = $this->pdo->prepare($sql);
+
+                $statement->execute();
+
+                echo "record has been deleted";
+
+            }catch (Exception $e) {
+
+                die($e->getMessage());
+
+            }
+
+        }
+
     }

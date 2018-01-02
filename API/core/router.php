@@ -13,17 +13,17 @@
 
     $numberOfCompleted = $query->checkCompletedCount();
 
-    switch ($method){
+    switch ($method) {
 
         case 'GET':
 
-            if($uri == 'getTaskList'){
+            if ($uri == 'getTaskList') {
 
                 $query->selectAll($config['table']);
 
                 break;
 
-            } elseif($uri ==''){
+            } elseif ($uri == '') {
 
                 $test = $query->getRecord($_REQUEST['id']);
 
@@ -40,15 +40,15 @@
 
         case 'POST':
 
-            if($uri == 'updateTask'){
+            if ($uri == 'updateTask') {
 
                 $query->updateTask($config['table'], $_POST, $_POST['id']);
 
                 break;
 
-            } elseif($uri == 'addTask'){
+            } elseif ($uri == 'addTask') {
 
-                if($numberOfCompleted <= 2){
+                if ($numberOfCompleted <= 2) {
 
                     $newTask = new Task($_POST);
 
@@ -65,22 +65,28 @@
                 }
 
 
-            }elseif($uri = 'markTaskAsCompleted') {
+            } elseif ($uri = 'delete'){
+
+                $query->deleteRecord($_POST["id"]);
+
+                break;
+
+            }elseif ($uri = 'markTaskAsCompleted') {
 
                 $check = $query->getRecord($_POST['id']);
 
-                if($check["completed_date"] == 0) {
+                if ($check["completed_date"] == 0) {
 
                     $query->updateToCompleted($_POST['id']);
 
                 } else {
 
-                    echo $check['name']. " has already been marked as completed";
+                    echo $check['name'] . " has already been marked as completed";
                 }
 
                 break;
 
-            } else {
+            }else {
 
                 echo "404. Not Found";
 
