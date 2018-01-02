@@ -30,16 +30,12 @@
 
                   var title = JSON.parse(data);
 
-                  var name = title[0]["name"];
-
-                  console.log(name);
-
                   var number = title.length;
 
-
-
                   for (var i = 0; i < number; i++) {
+
                       $("#theList").append("<li> <span class='delete'><i class='fa fa-trash' aria-hidden='true'></i></span>"+ title[i]['name'] + "</li>");
+
                   }
               }
           })
