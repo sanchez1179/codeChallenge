@@ -1,11 +1,6 @@
 <?php
 
-
-
     require 'bootstrap.php';
-
-
-
 
     $method = $_SERVER['REQUEST_METHOD'];
 
@@ -17,88 +12,90 @@
 
         case 'GET':
 
-            if ($uri == 'getTaskList') {
+            switch($uri){
 
-                $query->selectAll($config['table']);
+                case 'getTaskList':
 
-                break;
+                    $query->selectAll($config['table']);
 
-            } elseif ($uri == '') {
+                    break;
 
-                $test = $query->getRecord($_REQUEST['id']);
+                case 'getRecord':
 
-                echo json_encode($test);
+                    $test = $query->getRecord($_REQUEST['id']);
 
-                break;
+                    echo json_encode($test);
 
-            } else {
+                    break;
+
+                default:
 
                 echo "404.Not Found";
 
                 break;
             }
 
+
         case 'POST':
 
-            if ($uri == 'updateTask') {
+             switch($uri){
 
-                $query->updateTask($config['table'], $_POST, $_POST['id']);
+                 case'updateTask':
 
-                break;
-
-            } elseif ($uri == 'addTask') {
-
-                if ($numberOfCompleted <= 2) {
-
-                    $newTask = new Task($_POST);
-
-                    $query->insert($config['table'], $newTask->task);
+                    $query->updateTask($config['table'], $_POST, $_POST['id']);
 
                     break;
 
-                } else {
+                 case 'addTask':
 
-                    echo "There are already three incomplete tasks, please delete or complete at least one record before you can add another task";
+                    if ($numberOfCompleted <= 2) {
 
-                    break;
+                        $newTask = new Task($_POST);
+
+                        $query->insert($config['table'], $newTask->task);
+
+                        break;
+
+                     } else {
+
+                        echo "There are already three incomplete tasks, please delete or complete at least one record before you can add another task";
+
+                        break;
 
                 }
 
 
-            } elseif ($uri = 'delete'){
+                 case 'delete':
 
-                $query->deleteRecord($_POST["id"]);
+                    $query->deleteRecord($_POST["id"]);
 
-                break;
+                     break;
 
-            }elseif ($uri = 'markTaskAsCompleted') {
+                 case 'markTaskAsCompleted':
 
-                $check = $query->getRecord($_POST['id']);
+                    $check = $query->getRecord($_POST['id']);
 
-                if ($check["completed_date"] == 0) {
+                    if ($check["completed_status"] == 0) {
 
-                    $query->updateToCompleted($_POST['id']);
+                        $query->updateToCompleted($_POST['id']);
 
-                } else {
+                        break;
 
-                    echo $check['name'] . " has already been marked as completed";
-                }
+                    } else {
 
-                break;
+                        echo $check['name'] . " has already been marked as completed";
 
-            }else {
+                        break;
+                    }
 
-                echo "404. Not Found";
+                 case'unmarkTaskAsCompleted':
 
-                break;
+                     $query->updateToIncomplete($_POST['id']);
+
+                     break;
+
+
             }
-
-        default:
-
-            echo "404. Not Found";
-
-            break;
-
     }
 
 

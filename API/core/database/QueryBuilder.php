@@ -194,4 +194,31 @@
 
         }
 
+        public function updateToIncomplete($id){
+
+            $sql = "update tasks set completed_status = false, completed_date = NOW(), last_updated_date = NOW() where id =$id";
+
+            $sql2 = "select * from tasks where id = $id";
+
+            try {
+
+                $statement = $this->pdo->prepare($sql);
+
+                $statement->execute();
+
+                $statement = $this->pdo->prepare($sql2);
+
+                $statement->execute();
+
+                $record = $statement->fetch(PDO::FETCH_ASSOC);
+
+                echo $record['name']." task has been marked as incomplete!";
+
+            } catch (Exception $e) {
+
+                die($e->getMessage());
+
+            }
+        }
+
     }
