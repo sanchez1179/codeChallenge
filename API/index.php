@@ -1,8 +1,8 @@
 <?php
 
-//require 'core/auth.php';
-//
-//require_auth();
+require 'core/auth.php';
+
+require_auth();
 
 header('Access-Control-Allow-Origin: *');
 
